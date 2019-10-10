@@ -731,6 +731,7 @@ export class DataTable {
         this.wrapper.parentNode.replaceChild(this.table, this.wrapper)
 
         this.initialized = false
+        this.emit("datatable.destroy")
     }
 
     /**
